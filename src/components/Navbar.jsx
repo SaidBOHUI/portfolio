@@ -35,9 +35,9 @@ const Navbar = () => {
 const ShadowAnime = styled.div`
 	position: absolute;
 	height: 100%;
-	/* height: 5px; X2*/
+	/* height: 5px;  */
 	top: 0;
-	/* bottom: 0; X2*/
+	/* bottom: 0; ; */
 	z-index: 0;
 	background: #1abc9c;
 	border-radius: 8px;
@@ -81,7 +81,6 @@ const Blaze = styled.a`
 `
 
 const MenuStyle = styled.div`
-	/* padding-right: 50px; */
 	display: block;
 
 	@media(max-width: 600px){
@@ -100,22 +99,6 @@ const MenuStyle = styled.div`
 	background-color: #212F3C;
 	transform: ${({visible}) => visible ? "translateX(0)":'translateX(100%)'} ;
 	transition: transform 300ms;
-
-	/* Avec li */
-	/* display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	height: 100vh;
-	width : 100%;
-
-		ul{
-			list-style: none;
-		}
-			li{
-				margin-top: 1rem;
-			} */
 	}
 `
 
@@ -173,7 +156,6 @@ const BurgerStyle = styled.button`
 	display: none;
 		@media(max-width: 600px){
 			display: flex;
-			/* margin: 0 1rem; */
 			flex-direction: column;
 			justify-content: space-around;
 			position: fixed;
@@ -206,7 +188,6 @@ const Bar = styled.div`
 		}
 		&:nth-child(3){
 			transform: ${({visible}) => visible ? "rotate(-45deg)":"rotate(0)"};
-			/* transform: ${(visible) => visible ? 'rotate(-45deg)' : 'rotate(0)'}; */
 		}
 	}			
 `
