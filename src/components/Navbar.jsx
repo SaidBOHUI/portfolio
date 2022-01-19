@@ -25,9 +25,9 @@ const Navbar = () => {
 					<ShadowAnime></ShadowAnime>
 				</MenuStyle>
 				<BurgerStyle onClick={()=> setvisible(!visible)} visible = {visible}>
-					<Bar></Bar>
-					<Bar></Bar>
-					<Bar></Bar>
+					<Bar visible = {visible}></Bar>
+					<Bar visible = {visible}></Bar>
+					<Bar visible = {visible}></Bar>
 				</BurgerStyle>
 			</NavStyle>
 	)
@@ -177,8 +177,7 @@ const BurgerStyle = styled.button`
 			flex-direction: column;
 			justify-content: space-around;
 			position: fixed;
-			width: 3rem;
-			height: 3rem;
+			height: 2.5rem;
 			top: 2rem;
 			right: 2rem;
 			background: transparent;
@@ -197,8 +196,8 @@ const Bar = styled.div`
 	background: #1abc9c;
 	z-index: 5;
 	position: relative;
-	border-radius: 3px;
-	transform-origin : 1px ;
+	border-radius: 5px;
+	transform-origin : 3px ;
 		&:nth-child(1){
 			transform: ${({visible}) => visible ? 'rotate(45deg)':'rotate(0)'};
 		}
@@ -206,7 +205,8 @@ const Bar = styled.div`
 			opacity: ${({visible}) => visible ? '0':'1'}
 		}
 		&:nth-child(3){
-			transform: ${({visible}) => visible ? "rotate(-45deg)":"rotate(0)"}
+			transform: ${({visible}) => visible ? "rotate(-45deg)":"rotate(0)"};
+			/* transform: ${(visible) => visible ? 'rotate(-45deg)' : 'rotate(0)'}; */
 		}
 	}			
 `
