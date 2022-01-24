@@ -10,15 +10,9 @@ const Navbar = () => {
 
 	return(
 			<NavStyle visible = {visible}>
-				<Blaze>Said Bohui</Blaze>
+				<Blaze href = '#Accueil'>Said Bohui</Blaze>
 				<MenuStyle visible = {visible}>
-					{/* <ul>
-						<li><MenuLink href="#">About</MenuLink></li>
-						<li><MenuLink href="#">Expériences</MenuLink></li>
-						<li><MenuLink href="#">Portfolio</MenuLink></li>
-						<li><MenuLink href="#">Contact</MenuLink></li>
-					</ul> */}
-					<MenuLink href="#">About</MenuLink>
+					<MenuLink href="#Competences">Compétences</MenuLink>
 					<MenuLink href="#">Expériences</MenuLink>
 					<MenuLink href="#">Portfolio</MenuLink>
 					<MenuLink href="#">Contact</MenuLink>
@@ -55,7 +49,8 @@ const NavStyle = styled.nav`
 	top : 0 ;
 	width: 100%;
 	height: 60px;
-	background: #212F3C;
+	/* background: #212F3C; */
+	background :#151F27;
 	font-size: 0;
 	box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
 	display: flex;
@@ -64,6 +59,9 @@ const NavStyle = styled.nav`
 	font-family: 'Open Sans', 'sans-serif';
 	@media(max-width: 600px){
 		height: 100vh;
+		background:${({visible}) => visible ? "#151F27":'#B8FAF0'} ;
+		/* background:${({visible}) => visible ? "#151F27":'#212F3C'} ; */
+		z-index: 3;
 	}
 `
 const Blaze = styled.a`
@@ -73,6 +71,7 @@ const Blaze = styled.a`
 	text-transform: uppercase;
 	margin : 0 1rem;
 	color: white;
+	cursor: pointer;
 	/* color: #FFAA00;  */
 	@media(max-width: 600px){
 		display: none;
@@ -96,9 +95,9 @@ const MenuStyle = styled.div`
 	height: 100vh;
 	width: 100%;
 	/* padding: 2rem; */
-	background-color: #212F3C;
+	background: #151F27;
 	transform: ${({visible}) => visible ? "translateX(0)":'translateX(100%)'} ;
-	transition: transform 300ms;
+	transition: transform 400ms;
 	}
 `
 
@@ -118,7 +117,7 @@ const MenuLink = styled.a`
 
 	&:nth-child(1) {
 		&:hover~${ShadowAnime}{
-			width: 85.38px;
+			width: 144.92px;
 			right:358.56px
 		}
 	}
@@ -175,7 +174,7 @@ const Bar = styled.div`
 	@media(max-width:600px){
 	width: 2.5rem;
 	height: 0.2rem;
-	background: #1abc9c;
+	background:${({visible}) => visible ? '#1abc9c':'#151F27'} ;
 	z-index: 5;
 	position: relative;
 	border-radius: 5px;
