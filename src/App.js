@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './components/Navbar.jsx';
 import About from './components/About.jsx';
 import {createGlobalStyle} from 'styled-components'
+import Experiences from './components/Experiences.jsx';
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
     <GlobalStyle />
       <Navbar />
       <About />
+      <Experiences />
     </>
   )
 };

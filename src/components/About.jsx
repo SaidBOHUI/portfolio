@@ -132,7 +132,7 @@ a{
 const SecBigContainer = styled.div`
 background-color: #19232D;
 margin: 2rem;
-padding: 3rem 5rem;
+padding: 5rem 5rem;
 justify-content: flex-start;
 flex-direction:row;
 color: white;
@@ -188,9 +188,13 @@ h3{
 
 const HalfCompetence = styled.div`
 width : 50%;
+margin-right : 1rem;
+margin-left : 1rem;
+
 @media(max-width: 660px){
 	display: block;
 	width: 100%;
+	margin-left : 0rem;
 }
 `
 

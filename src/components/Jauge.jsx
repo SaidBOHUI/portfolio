@@ -20,6 +20,8 @@ display : flex;
 justify-content: space-between;
 margin-top: 1rem;
 margin-bottom: 2rem;
+/* margin-right : 1rem;
+margin-left : 1rem */
 
 span{
 	width : 10%;
