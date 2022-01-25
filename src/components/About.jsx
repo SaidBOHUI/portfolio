@@ -81,7 +81,7 @@ padding: 2rem 3rem;
 display: flex;
 justify-content: flex-start;
 flex-direction:row; 
-@media(max-width: 600px){
+@media(max-width: 660px){
 	display: block;
 	margin-top: 6rem;
 }
@@ -105,7 +105,7 @@ padding : 0 5rem 2rem;
 	font-size: 1.5rem;
  }
 
- @media(max-width: 600px){
+ @media(max-width: 660px){
 	padding : 0;
 	margin: auto;
 	width: 90%;
@@ -145,7 +145,7 @@ h2{
 	color: white;
 	margin-left: 1rem;
 }
-@media(max-width: 600px){
+@media(max-width: 660px){
 	padding: 3rem 1rem;
 
 	title{
@@ -160,7 +160,7 @@ h2{
 
 const Title = styled.div`
 display : flex;
-@media(max-width: 600px){
+@media(max-width: 660px){
 	margin-left:2rem;
 	margin-bottom: 1rem;
 }
@@ -176,7 +176,7 @@ h3{
 	margin-bottom: 2.5rem;
 	font-size: 1.7rem;
 }
-@media(max-width: 600px){
+@media(max-width: 660px){
 	text-align: center;
 	h3{
 		padding-left: 0;
@@ -188,7 +188,7 @@ h3{
 
 const HalfCompetence = styled.div`
 width : 50%;
-@media(max-width: 600px){
+@media(max-width: 660px){
 	display: block;
 	width: 100%;
 }
@@ -196,7 +196,7 @@ width : 50%;
 
 const FullCompetence = styled.div`
 display : flex;
-@media(max-width: 600px){
+@media(max-width: 660px){
 	display: block;
 }
 `

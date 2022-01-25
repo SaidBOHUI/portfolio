@@ -36,7 +36,7 @@ const ShadowAnime = styled.div`
 	background: #1abc9c;
 	border-radius: 8px;
 	transition: all .5s ease 0s;
-	@media(max-width: 600px){
+	@media(max-width: 660px){
 		display: none;
 	}
 
@@ -48,7 +48,7 @@ const NavStyle = styled.nav`
 	position: fixed;
 	top : 0 ;
 	width: 100%;
-	height: 60px;
+	height: 70px;
 	/* background: #212F3C; */
 	background :#151F27;
 	font-size: 0;
@@ -57,7 +57,7 @@ const NavStyle = styled.nav`
 	justify-content: space-between;
 	align-items: center;
 	font-family: 'Open Sans', 'sans-serif';
-	@media(max-width: 600px){
+	@media(max-width: 660px){
 		/* height: 100vh; */
 		height:${({visible}) => visible ? "100vh":'0'} ;
 		background:${({visible}) => visible ? "#151F27":'#B8FAF0'} ;
@@ -74,7 +74,7 @@ const Blaze = styled.a`
 	color: white;
 	cursor: pointer;
 	/* color: #FFAA00;  */
-	@media(max-width: 600px){
+	@media(max-width: 660px){
 		display: none;
 	}
 
@@ -83,7 +83,7 @@ const Blaze = styled.a`
 const MenuStyle = styled.div`
 	display: block;
 
-	@media(max-width: 600px){
+	@media(max-width: 660px){
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -108,12 +108,12 @@ const MenuLink = styled.a`
 	color: white;
 	/* color: #FFAA00; */
 	text-decoration: none;
-	line-height: 60px;
+	line-height: 70px;
 	position: relative;
 	z-index: 1;
 	display: inline-block;
 	text-align: center;
-	height: 60px;
+	height: 70px;
 	padding: 0 1rem;
 
 	&:nth-child(1) {
@@ -140,7 +140,7 @@ const MenuLink = styled.a`
 			right:0;
 		}
 	}
-	@media(max-width: 600px){
+	@media(max-width: 660px){
 		padding: 1.5rem;
 		font-size: 5vw;
 		text-decoration: none;
@@ -154,7 +154,7 @@ const MenuLink = styled.a`
 `
 const BurgerStyle = styled.button`
 	display: none;
-		@media(max-width: 600px){
+		@media(max-width: 660px){
 			display: flex;
 			flex-direction: column;
 			justify-content: space-around;
@@ -172,7 +172,7 @@ const BurgerStyle = styled.button`
 const Bar = styled.div`
 /* display: none; */
 
-	@media(max-width:600px){
+	@media(max-width:660px){
 	width: 2.5rem;
 	height: 0.2rem;
 	background:${({visible}) => visible ? '#1abc9c':'#151F27'} ;

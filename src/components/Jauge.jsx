@@ -20,16 +20,15 @@ display : flex;
 justify-content: space-between;
 margin-top: 1rem;
 margin-bottom: 2rem;
-margin-left: 1rem;
-margin-right: 1rem;
-
 
 span{
 	width : 10%;
+	text-align: left;
 }
-@media(max-width: 600px){
+
+@media(max-width: 660px){
 width : 100%;
-padding-left: 0;
+/* margin-right: 2rem; */
 display: flex;
 justify-content: space-between;
 
@@ -41,7 +40,7 @@ width : 70%;
 background: white;
 height : 20px;
 border-radius: 5px;
-@media(max-width: 600px){
+@media(max-width: 660px){
 	width : 70%;
 }
 `
