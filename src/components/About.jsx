@@ -49,7 +49,7 @@ const About = () => {
 				</Title>
 				<p>Actuellement en 3<sup>ème</sup> année de formation web, je possède de solide base en html/css/jss. Durant mon apprentissage en autodidacte et en formation, j'ai appris à maîtriser des frameworks tels que bootstrap et symfony. Ainsi je suis actuellement en cours de spécialisation en tant que MEARN stack developpeur.</p>
 				<CompetenceTab>
-					<h3>Mes compétences professionnelles</h3>
+					<h3>Mes compétences Pro</h3>
 					<FullCompetence>
 						<HalfCompetence>
 							<Jauge matiere = 'html5' color = '#6C1F62' pourcentage = '80%'/>		
@@ -80,7 +80,11 @@ margin: 6rem 2rem 2rem;
 padding: 2rem 3rem;
 display: flex;
 justify-content: flex-start;
-flex-direction:row 
+flex-direction:row; 
+@media(max-width: 600px){
+	display: block;
+	margin-top: 6rem;
+}
 `
 
 const MidContainer = styled.div`
@@ -100,6 +104,13 @@ padding : 0 5rem 2rem;
 	font-weight: bold;
 	font-size: 1.5rem;
  }
+
+ @media(max-width: 600px){
+	padding : 0;
+	margin: auto;
+	width: 90%;
+ }
+
 `
 const CvDownload = styled.button`
 width : 15rem;
@@ -134,10 +145,25 @@ h2{
 	color: white;
 	margin-left: 1rem;
 }
+@media(max-width: 600px){
+	padding: 3rem 1rem;
+
+	title{
+		margin: 0 2rem;
+	}
+	p{
+		text-align: justify;
+		margin: 0 2rem;
+	}
+}
 `
 
 const Title = styled.div`
 display : flex;
+@media(max-width: 600px){
+	margin-left:2rem;
+	margin-bottom: 1rem;
+}
 `
 
 const CompetenceTab = styled.div`
@@ -150,16 +176,30 @@ h3{
 	margin-bottom: 2.5rem;
 	font-size: 1.7rem;
 }
+@media(max-width: 600px){
+	text-align: center;
+	h3{
+		padding-left: 0;
+		width:100%
+	}
+}
+
 `
 
 const HalfCompetence = styled.div`
-width : 50%`
+width : 50%;
+@media(max-width: 600px){
+	display: block;
+	width: 100%;
+}
+`
 
 const FullCompetence = styled.div`
-display : flex`
-
-/* const SecondHalfCompetence = styled.div`
-width : 50%` */
+display : flex;
+@media(max-width: 600px){
+	display: block;
+}
+`
 
 
 

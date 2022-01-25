@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Jauge = (props) => {
-	// matiere, color, pourcentage
 const color = props.color;
 const pourcentage = props.pourcentage;
 	return(
@@ -18,13 +17,23 @@ const pourcentage = props.pourcentage;
 
 const Competence = styled.div`
 display : flex;
-padding-left: 2rem;
+justify-content: space-between;
 margin-top: 1rem;
 margin-bottom: 2rem;
+margin-left: 1rem;
+margin-right: 1rem;
+
 
 span{
-	margin-right: 30px;
-	width : 10%
+	width : 10%;
+}
+@media(max-width: 600px){
+width : 100%;
+padding-left: 0;
+display: flex;
+justify-content: space-between;
+
+
 }`
 
 const WhiteBar = styled.div`
@@ -32,6 +41,9 @@ width : 70%;
 background: white;
 height : 20px;
 border-radius: 5px;
+@media(max-width: 600px){
+	width : 70%;
+}
 `
 
 const ColoredBar = styled.nav`

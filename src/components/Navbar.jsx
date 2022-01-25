@@ -58,7 +58,8 @@ const NavStyle = styled.nav`
 	align-items: center;
 	font-family: 'Open Sans', 'sans-serif';
 	@media(max-width: 600px){
-		height: 100vh;
+		/* height: 100vh; */
+		height:${({visible}) => visible ? "100vh":'0'} ;
 		background:${({visible}) => visible ? "#151F27":'#B8FAF0'} ;
 		/* background:${({visible}) => visible ? "#151F27":'#212F3C'} ; */
 		z-index: 3;
