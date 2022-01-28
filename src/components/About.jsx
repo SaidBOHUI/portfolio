@@ -18,7 +18,7 @@ const About = () => {
 							<Typewriter
 							loop
 							cursor
-							cursorStyle ='|'
+							cursorStyle = '_'
 							typeSpeed = {70}
 							deletespeed = {50}
 							delayspeed = {1000}
@@ -28,7 +28,7 @@ const About = () => {
 					</p>
 					<CvDownload>
 						<a href="#">
-							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
 								<path d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293V6.5z"/>
 								<path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
 							</svg>
@@ -42,12 +42,12 @@ const About = () => {
 			</BigContainer>
 			<SecBigContainer id = 'Competences'>
 				<Title>
-					<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white" class="bi bi-code-slash" viewBox="0 0 16 16">
+					<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white" className="bi bi-code-slash" viewBox="0 0 16 16">
 						<path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/>
 					</svg>
 					<h2>Compétences</h2>
 				</Title>
-				<p>Actuellement en 3<sup>ème</sup> année de formation web, je possède de solide base en html/css/jss. Durant mon apprentissage en autodidacte et en formation, j'ai appris à maîtriser des frameworks tels que bootstrap et symfony. Ainsi je suis actuellement en cours de spécialisation en tant que MEARN stack developpeur.</p>
+				<p>Actuellement en 3<sup>ème</sup> année de formation web, je possède de solide base en html/css/jss. Durant mon apprentissage en autodidacte et en formation, j'ai appris à maîtriser des frameworks tels que bootstrap et symfony. Ainsi je suis actuellement en cours de spécialisation en tant que MERN stack developpeur.</p>
 				<CompetenceTab>
 					<h3>Mes compétences Pro</h3>
 					<FullCompetence>
@@ -81,6 +81,9 @@ padding: 2rem 3rem;
 display: flex;
 justify-content: flex-start;
 flex-direction:row; 
+border-radius: 8px;
+box-shadow: 5px 5px 6px;
+
 @media(max-width: 660px){
 	display: block;
 	margin-top: 6rem;
@@ -136,6 +139,8 @@ padding: 5rem 5rem;
 justify-content: flex-start;
 flex-direction:row;
 color: white;
+border-radius: 8px;
+box-shadow: 5px 5px 6px black;
 
 h2{
 	font-size:2rem;
