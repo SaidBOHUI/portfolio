@@ -13,9 +13,9 @@ const Navbar = () => {
 				<Blaze href = '#Accueil'>Said Bohui</Blaze>
 				<MenuStyle visible = {visible}>
 					<MenuLink href="#Competences" onClick={()=> setvisible(!visible)}>Compétences</MenuLink>
-					<MenuLink href="#" onClick={()=> setvisible(!visible)}>Expériences</MenuLink>
-					<MenuLink href="#" onClick={()=> setvisible(!visible)}>Portfolio</MenuLink>
-					<MenuLink href="#" onClick={()=> setvisible(!visible)}>Contact</MenuLink>
+					<MenuLink href="#Experiences" onClick={()=> setvisible(!visible)}>Expériences</MenuLink>
+					<MenuLink href="#Portfolio" onClick={()=> setvisible(!visible)}>Portfolio</MenuLink>
+					<MenuLink href="#Contact" onClick={()=> setvisible(!visible)}>Contact</MenuLink>
 					<ShadowAnime></ShadowAnime>
 				</MenuStyle>
 				<BurgerStyle onClick={()=> setvisible(!visible)} visible = {visible}>

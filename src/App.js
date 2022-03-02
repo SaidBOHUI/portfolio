@@ -3,6 +3,7 @@ import Navbar from './components/Navbar.jsx';
 import About from './components/About.jsx';
 import {createGlobalStyle} from 'styled-components'
 import Experiences from './components/Experiences.jsx';
+import Contact from './components/Contact.jsx';
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Navbar />
       <About />
       <Experiences />
+      <Contact />
     </>
   )
 };
